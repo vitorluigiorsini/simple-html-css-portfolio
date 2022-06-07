@@ -366,3 +366,22 @@ div#conteudo-footer form input[type="submit"] {
 div#conteudo-footer form input[type="submit"]:hover {
   filter: brightness(0.8);
 }
+
+#backToTopButton {
+  width: 60px;
+  position: fixed;
+  bottom: 1rem;
+  right: 2.5rem;
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform: translateY(100%);
+  transition: 200ms;
+}
+
+#backToTopButton.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
