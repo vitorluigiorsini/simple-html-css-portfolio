@@ -1,0 +1,368 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Raleway:wght@400;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background: #E5E5E5;
+  --primary: #4387D8;
+  --secondary: #315E93;
+  --tertiary: #FBFCFE;
+  --white: #FFFFFF;
+  --title: #102032;
+  --text: #97A3B0;
+  --container: 1216px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  font-family: Raleway;
+  scroll-behavior: smooth;
+}
+
+/* HEADER ------------------------------------------------ */
+
+header {
+  max-width: var(--container);
+  margin: 0 auto;
+  margin-top: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+header ul li:not(:first-child) {
+  margin-left: 24px;
+}
+
+nav ul a {
+  text-decoration: none;
+  display: block;
+}
+
+ul#links a {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--title);
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+ul#links a:hover {
+ filter: opacity(0.8);
+}
+
+ul#redes img {
+  display: block;
+}
+
+/* MAIN ------------------------------------------------ */
+
+section#inicio {
+  max-width: var(--container);
+  margin: 0 auto;
+
+  height: calc(100vh - (40px + 29px));
+
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+section#inicio h1 {
+  font-size: 86px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+section#inicio h1 span {
+  color: var(--primary);
+  display: block;
+}
+
+section#inicio img {
+  display: block;
+  object-fit: contain;
+  width: 493px;
+  border-radius: 50%;
+ 
+  -webkit-mask-image: linear-gradient(to left, var(--background), transparent);
+  mask-image: linear-gradient(to left, var(--background), transparent);
+
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+section#formacao {
+  background-color: var(--tertiary);
+}
+
+section#formacao div#conteudo-formacao {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+div#conteudo-formacao h2 {
+  font-size: 48px;
+  font-weight: 700;
+  margin-left: 95px;
+}
+
+div#conteudo-formacao li.formacao-item {
+  display: flex;
+  font-family: Lato;
+}
+
+div#conteudo-formacao ul#lista-formacao {
+  flex-direction: column;
+  margin-top: 37px;
+}
+
+li.formacao-item:not(:first-child) {
+  margin-top: 45px;
+}
+
+li.formacao-item div {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 24px;
+}
+
+li.formacao-item h3 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+li.formacao-item p.onde {
+  font-size: 16px;
+  color: var(--title);
+}
+
+li.formacao-item p.quando {
+  font-size: 14px;
+  color: var(--text);
+}
+
+section#habilidades {
+  background-color: var(--primary);
+}
+
+section#habilidades div#conteudo-habilidades {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 154px 0;
+  display: flex;
+  align-items:center;
+}
+
+div#conteudo-habilidades h2 {
+  color: var(--white);
+  font-weight: 700;
+  font-size: 48px;
+}
+
+div#conteudo-habilidades h2 span {
+  font-size: 24px;
+}
+
+div#conteudo-habilidades ul#tecnologias {
+  width: 100%;
+  margin-left: 49px;
+  display: flex;
+}
+
+ul#tecnologias li.tecnologia {
+  background-color: var(--white);
+}
+
+li.tecnologia {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 159px;
+  height: 159px;
+  border-radius: 8px;
+  box-shadow: 0px 36px 28px -24px rgba(0, 0, 0, 0.2);
+}
+
+li.tecnologia:not(:last-child) {
+  margin-right: 24px;
+}
+
+li.tecnologia p {
+  font-family: Lato;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--primary);
+  margin-top: 8px;
+}
+
+section#publicacoes div#conteudo-publicacoes {
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+div#conteudo-publicacoes img {
+  border-radius: 8px;
+  box-shadow: 0 20px 28px -14px rgba(0, 0, 0, 0.8);
+}
+
+div#conteudo-publicacoes h2 {
+  color: var(--title);
+  font-size: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#conteudo-publicacoes h2 p {
+  font-size: 24px;
+}
+
+div#conteudo-publicacoes article.publicacao:not(:first-child) {
+  margin-top: 24px;
+}
+
+div#conteudo-publicacoes article.publicacao:nth-child(2) {
+  margin-top: 40px;
+}
+
+div#conteudo-publicacoes article.publicacao {
+  display: flex;
+  align-items: center;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 24px 26px;
+  box-shadow: 0 28px 36px -16px rgba(0, 0, 0, 0.1);
+}
+
+article.publicacao div {
+  margin-left: 24px;
+}
+
+article.publicacao div h3 {
+  font-size: 24px;
+  color: var(--title)
+}
+
+article.publicacao div p {
+  font-family: Lato;
+  font-size: 16px;
+  color: var(--text);
+
+  margin-top: 16px;
+}
+
+footer {
+  height: 100vh;
+  background-color: var(--primary);
+}
+
+footer div#conteudo-footer {
+  max-width: var(--container);
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div#conteudo-footer div#titulo-footer {
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+div#conteudo-footer div#titulo-footer h2 {
+  font-size: 48px;
+}
+
+div#conteudo-footer div#titulo-footer p {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+div#conteudo-footer form {
+  margin-top: 40px;
+  max-width: 592px;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+div#conteudo-footer form input {
+  font-family: Lato;
+
+  height: 67px;
+  border-radius: 4px;
+  border: 0;
+}
+
+div#conteudo-footer form textarea {
+  font-family: Lato;
+
+  border-radius: 4px;
+  border: 0;
+  resize: none;
+}
+
+div#conteudo-footer form input::placeholder, textarea::placeholder {
+  color: var(--text);
+}
+
+div#conteudo-footer form input, textarea {
+  color: var(--title);
+}
+
+div#conteudo-footer form input:not([type="submit"]) {
+  padding: 0 24px;
+}
+
+div#conteudo-footer form input + input {
+  margin-top: 16px;
+}
+
+div#conteudo-footer form textarea {
+  margin-top: 16px;
+  padding: 24px;
+}
+
+div#conteudo-footer form input[type="submit"] {
+  margin-top: 24px;
+  background-color: var(--secondary);
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 700;
+
+  transition: 0.2s;
+}
+
+div#conteudo-footer form input[type="submit"]:hover {
+  filter: brightness(0.8);
+}

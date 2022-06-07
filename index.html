@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <title>Portifólio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul id="links">
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#habilidades">Habilidades</a></li>
+          <li><a href="#publicacoes">Publicações</a></li>          
+        </ul>
+      </nav>
+
+      <h2 id="logo">
+        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+<!--<path d="M0 7.1579L11.1831 0V3.98597L5.16757 7.97193L11.1831 11.7895V16L0 8.98246V7.1579Z" fill="#4387D8"/>-->
+<path d="M24 8.98246L12.8169 16V11.7895L18.8324 7.97193L12.8169 3.98597V0L24 7.1579V8.98246Z" fill="#4387D8"/>
+</svg> Vitor Orsini</h2>
+      
+        <ul id="socialMedia">
+          <li>
+            <a href="https://twitter.com/vitorl85" target="_blank">
+              <img src="./images/twitter.svg" alt="twitter">
+            </a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/in/vitorluigiorsini" target="_blank">
+              <img src="./images/linkedin.svg" alt="linkedin">
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/vitororsini" target="_blank">
+              <img src="./images/github.svg" alt="github">
+            </a>
+          </li>
+          <li>
+            <a href="https://wa.me/+5531993474431" target="_blank">
+              <img src="./images/whatsapp.svg" alt="whatsapp">
+            </a>
+          </li>
+        </ul>
+    </header>
+    
+    <main>
+      <section id="inicio">
+        <h1>Web and Mobile<span>Developer</span></h1>
+        <img src="./images/vitor.jpg" alt="Vitor imagem de perfil">
+      </section>
+
+      <section id="formacao">
+        <div id="conteudo-formacao">
+          <h2>Formação</h2>
+          <ul id="lista-formacao">
+            <li class="formacao-item">
+              <img src="./images/ufsj.png" alt="Logo da UFSJ">
+              <div>
+                <h3>Universidade Federal de São João del-Rei</h3>
+                <p class="onde"><strong>Graduação em Engenharia Civil</strong></p>
+                <p class="quando">concluído em fevereiro de 2018</p>
+              </div>
+            </li>
+            <li class="formacao-item">
+              <img src="./images/cbm.png" alt="Logo do colégio batista mineiro">
+              <div>
+                <h3>Colégio Batista Mineiro</h3>
+                <p class="onde"><strong>Técnico em Informática</strong></p>
+                <p class="quando">concluído em dezembro de 2004</p>
+              </div>          
+            </li>
+          </ul>
+        </div>
+      </section>
+
+        <section id="habilidades">
+          <div id="conteudo-habilidades">
+          <h2><span>Minhas</span>
+            Habilidades</h2>
+          <ul id="tecnologias">
+            <li class="tecnologia">
+              <img src="./images/icone_html.png" alt="HTML5">
+              <p>HTML</p>
+            </li>
+            <li class="tecnologia">
+              <img src="./images/icone_css.png" alt="CSS3">
+              <p>CSS</p>
+            </li>
+            <li class="tecnologia">
+              <img src="./images/icone_javascript.png" alt="JAVASCRIPT">
+              <p>JavaScript</p>
+            </li>
+            <li class="tecnologia">
+              <img src="./images/icone_nodejs.png" alt="NODE.JS">
+              <p>Node.js</p>
+            </li>
+            <li class="tecnologia">
+              <img src="./images/icone_acessibilidade.png" alt="Acessibilidade">
+              <p>Acessibilidade</p>
+            </li>
+          </ul>
+        </div>
+        </section>
+
+        <section id="publicacoes">
+          <div id="conteudo-publicacoes">
+            <h2><span>Meus</span>
+              Cursos Complementares</h2>
+
+            <article class="publicacao">
+              <img src="./images/capa_staart.png" alt="Logo Staart">
+              <div>
+                <h3>Staart</h3>
+                <p>Staart é uma plataforma inovadora de educação em tecnologia e habilidades digitais. Traz uma metodologia de ensino prática que você não encontra em outro lugar</p>
+              </div>
+            </article>
+            <article class="publicacao">
+              <img src="./images/capa_rocketseat.png" alt="Logo Rocketseat">
+              <div>
+                <h3>Rockeseat</h3>
+                <p>Somos uma escola de programação com mais de 30 mil alunos e a nossa missão é capacitar pessoas que buscam se profissionalizar na área, além de ajudar devs a se prepararem para as oportunidades do mercado de trabalho, seja qual for seu nível de conhecimento. Para isso, promovemos eventos como esse, onde reunimos toda a comunidade e disponibilizamos nossa metodologia de forma gratuita pra acelerar sua evolução.</p>
+              </div>
+            </article>
+          </div>
+        </section>        
+      </section>      
+    </main>
+    
+    <footer>
+      <div id="conteudo-footer">
+        <div id="titulo-footer">
+          <h2>Entre em contato</h2>
+          <p>Me mande uma mensagem!</p>
+        </div>
+        <form>     
+          <input type="text" placeholder="Digite seu nome" required="true">
+          <input type="email" placeholder="E-mail" required="true">
+          <input type="tel" placeholder="Telefone" required="true">
+          <textarea
+            placeholder="Mensagem"
+            rows="7"
+            autocapitalize="sentences"
+            required="true"
+          ></textarea>          
+          <input type="submit" value="Enviar">
+        </form>
+       </div>
+    </footer>
+  </body>
+</html>
