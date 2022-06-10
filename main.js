@@ -6,9 +6,10 @@ function onScroll() {
 }
 
 function showBackToTopButtonOnScroll() {
-    if (scrollY > 550) {
-      backToTopButton.classList.add('show')
-    } else {
-      backToTopButton.classList.remove('show')
-    }
+  const button = document.querySelector('#backToTopButton')
+  if (scrollY > 550) {
+    button.classList.add('show')
+  } else {
+    button.classList.remove('show')
   }
+}
