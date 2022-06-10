@@ -55,7 +55,7 @@ nav ul a {
 
 ul#links a {
   font-weight: 700;
-  font-size: 1.14rem;
+  font-size: 0.8rem;
   color: var(--title);
   text-transform: uppercase;
   transition: 0.2s;
